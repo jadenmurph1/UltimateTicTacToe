@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+  <style>
+    body {
+        background-color: rgb(50, 50, 50);
+    }
+
+     .ultragrid {
+        display: grid;
+        grid-template-columns: repeat(3, 40px);
+        grid-column-gap: 150px;
+        margin: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 40px);
+      grid-gap: 10px;
+      margin: 20px;
+    }
+
+    .grid input {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .cell {
+        background-color: blue;
+        color: yellow;
+        cursor: pointer;
+    }
+    /* I am confused why this wont work(its becasue of the hiarchy thing*/
+    #gridone {
+        background-color: black; 
+    }
+
+    #winnerbox {
+        background-color: black;
+        color: blue;
+        width: 90px;
+        position: absolute;
+        left: 26\0px;
+    }
+
+    .horline {
+        width: 20px;
+        height: 600px;
+        background-color: black;
+    }
+
+    .verline {
+        width: 565px;
+        height: 20px;
+        background-color: black;
+    }
+
+    #leftline {
+        position: absolute;
+        left: 207px;
+    }
+
+    #rightline {
+        position: absolute;
+        left: 397px;
+    }
+
+    #topline {
+        position: absolute;
+        top: 273px;
+    }
+
+    #bottomline {
+        position: absolute;
+        top: 470px;
+    }
+
+    #title {
+        font-size: xxx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+  </style>
+
+</head>
+<body>
+
+    <div id="title">Ultimate Tic Tac Toe</div>
+
+   <div id="winnerbox">Winner Here</div>
+
+    <div class="ultragrid">
+
+
+  <div  class="grid" id="game-0">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+
+  <div class="grid" id="game-1">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-2">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-3">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-4">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-5">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-6">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-7">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div class="grid" id="game-8">
+  <input class="cell" maxlength="1" readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  <input class="cell" maxlength="1"readonly>
+  </div>
+
+  <div id="leftline" class="horline"></div>
+  <div id="rightline" class="horline"></div>
+  <div id="topline" class="verline"></div>
+  <div id="bottomline" class="verline"></div>
+
+
+
+  </div> 
+
+    <script src="UltTTT.js"></script>
+
+</body>
+</html>
